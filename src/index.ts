@@ -1,6 +1,6 @@
-import { createApp } from './main';
+import { createGenwebApp } from './main';
 
-const APPLICATION_CODE = `
+export default createGenwebApp(`
 A todo list application where users can:
 1. Add new tasks
 2. Mark tasks as complete
@@ -11,6 +11,4 @@ Can you start with the following tasks:
 - buy groceries
 - walk the dog
 - do laundry
-`;
-
-export default createApp(APPLICATION_CODE);
+`);

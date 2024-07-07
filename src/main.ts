@@ -1,7 +1,7 @@
 import { createLLMWebApp } from './backend';
 import { frontendHTML } from './frontend';
 
-export function createApp(applicationCode: string) {
+export function createGenwebApp(applicationCode: string) {
 	const systemPrompt = `
 You are an AI assistant simulating a web application. Below is the application I want you to simulate:
 

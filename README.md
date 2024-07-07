@@ -14,6 +14,36 @@ this is a proof of concept of software 2.0, and is not ready for production.
 
 ## Here's how genweb compares to traditional web development:
 ![gfx](images/gfx.png)
+![gfx2](images/comp.png)
+
+## Examples
+
+#### Todo List App
+```js
+import { createGenwebApp } from './main';
+
+export default createGenwebApp(`
+A todo list application where users can:
+1. Add new tasks
+2. Mark tasks as complete
+3. Delete tasks
+4. Filter tasks by status (all, active, completed)`);
+```
+
+#### Calculator App
+```js
+import { createGenwebApp } from './main';
+
+export default createGenwebApp(`
+A calculator application where users can:
+1. Add numbers
+2. Subtract numbers
+3. Multiply numbers
+4. Divide numbers
+
+Add buttons for each operation and each number from 0-9`);
+```
+
 
 
 
