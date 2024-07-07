@@ -1,0 +1,7 @@
+// disable format on save for all md files
+{
+  "editor.formatOnSave": true,
+  "[markdown]": {
+	"editor.formatOnSave": false
+  }
+}
