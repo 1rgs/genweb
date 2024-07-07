@@ -2,7 +2,7 @@
 
 ### backend ❌ frontend ❌ database ❌ llm ✅
 
-genweb allows you to build full stack applications with natrual language. Unlike other codegen tools, genweb generates the user interface html directly, without outputting any backend or frontend framework code.
+genweb allows you to build full stack applications with natural language. Unlike other codegen tools, genweb generates the user interface html directly, without outputting any backend or frontend framework code.
 
 Any user interactions are piped back to the llm, which "rerenders" the html as necessary, as a web framework like react would.
 
