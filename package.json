@@ -15,5 +15,9 @@
     "typescript": "^5.4.5",
     "vitest": "1.5.0",
     "wrangler": "^3.60.3"
+  },
+  "dependencies": {
+    "hono": "^4.4.12",
+    "together-ai": "^0.6.0-alpha.3"
   }
 }
