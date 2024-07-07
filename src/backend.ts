@@ -49,6 +49,7 @@ export function createLLMWebApp(systemPrompt: string, frontendHTML: string) {
 			model: 'meta-llama/Llama-3-8b-chat-hf',
 			messages: sessionState.messages,
 			stream: true,
+			temperature: 1,
 		});
 
 		let assistantMessage = '';
