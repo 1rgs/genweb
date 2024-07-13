@@ -1,5 +1,6 @@
 import { Hono } from 'hono';
 import Together from 'together-ai';
+import { AppTemplate } from './templates/appCreator';
 
 interface Env {
 	TOGETHER_API_KEY: string;
@@ -12,6 +13,8 @@ interface SessionState {
 
 export function createLLMWebApp(systemPrompt: string, frontendHTML: string) {
 	const app = new Hono<{ Bindings: Env }>();
+
+	app.get('/creator', (c) => c.html(AppTemplate));
 
 	app.get('/', (c) => c.html(frontendHTML));
 
